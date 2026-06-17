@@ -16,6 +16,7 @@ typedef ResponsiveBuild =
 extension ResponsiveExtension on num {
   double get w => this * SizeUtils.scaleWidth;
   double get h => this * SizeUtils.scaleHeight;
+  double get r => this * SizeUtils.scaleHeight;
   double get sp => this * SizeUtils.scaleWidth;
 }
 

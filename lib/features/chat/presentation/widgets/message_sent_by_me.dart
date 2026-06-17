@@ -4,7 +4,7 @@ import '../../../../core/utils/constants/app_sizer.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
 import '../../../../../../core/common/widgets/custom_text.dart';
-import 'view_image_screen.dart';
+import '../../../../core/common/widgets/image_viewer_screen.dart';
 
 class MessageSentByMe extends StatelessWidget {
   final String? message;
@@ -21,7 +21,7 @@ class MessageSentByMe extends StatelessWidget {
         children: [
           if (image?.isNotEmpty == true) ...[
             GestureDetector(
-              onTap: () => Get.to(() => ViewImageScreen(imageUrl: image)),
+              onTap: () => Get.to(() => ImageViewerScreen(imageUrl: image)),
               child: Image.network(
                 image!,
                 fit: BoxFit.fill,
